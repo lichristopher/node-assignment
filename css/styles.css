@@ -8,6 +8,10 @@ body {
     font-size: 10px;
 }
 
+div {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     font-size: 5rem;
