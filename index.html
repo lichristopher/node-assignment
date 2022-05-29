@@ -16,8 +16,21 @@
   <body>
     <div>
       <h1>Quote Placeholder</h1>
-      <h2>Author Placeholder</h2>
+      <h2>Ron Swanson</h2>
       <button>Generate Quote</button>
     </div>
+
+    <script>
+      const button = document.querySelector('button');
+      button.addEventListener('click', function () {
+        fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
+          .then((response) => response.json())
+          .then((data) => {
+            const quote = data[0];
+            const h1 = document.querySelector('h1');
+            h1.textContent = quote;
+          });
+      });
+    </script>
   </body>
 </html>
