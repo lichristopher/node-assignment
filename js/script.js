@@ -5,6 +5,6 @@ button.addEventListener('click', function () {
     .then((data) => {
       const quote = data[0];
       const h1 = document.querySelector('h1');
-      h1.textContent = quote;
+      h1.textContent = `"${quote}"`;
     });
 });
