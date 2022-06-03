@@ -11,11 +11,4 @@ button.addEventListener('click', function () {
       h1.textContent = `"${quote}"`;
       h2.textContent = `${author}`;
     });
-  // fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     const quote = data[0];
-  //     const h1 = document.querySelector('h1');
-  //     h1.textContent = `"${quote}"`;
-  //   });
 });
